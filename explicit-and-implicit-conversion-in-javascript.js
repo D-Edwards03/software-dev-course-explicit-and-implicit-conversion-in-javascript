@@ -28,5 +28,15 @@ if (isValid) {
 }
 
 let age = "25";
-let totalAge = age + 5;
+let totalAge = Number(age) + 5; //converted age to a number
 console.log("Total Age: " + totalAge);
+
+//Implicit
+if(NaN) {
+  console.log("This is falsy");
+}
+
+//Explicit
+let answer = 272;
+console.log(answer); //before: number
+console.log(String(answer)); //after: string
